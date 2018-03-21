@@ -1,4 +1,3 @@
-from __future__ import division
 from collections import Counter
 from random import random
 
@@ -40,7 +39,7 @@ def deadliest_warrior():
         
 outcomes = Counter()
 
-for _ in xrange(100000):
+for _ in range(100000):
     outcomes[deadliest_warrior()] += 1
 
-print outcomes
+print(outcomes)
